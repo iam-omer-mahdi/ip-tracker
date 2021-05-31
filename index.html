@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ip location tracker">
+    <meta name="keywords" content="ip,tracker,ip location,ip tracker,find ip">
+    <meta name="author" content="Omer Mahdi">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap">
+    <title>Ip Tracker</title>
+</head>
+<body>
+    <header class="text-center py-6 relative z-10">
+        <h1 class="text-center text-2xl text-white font-bold mb-4">IP Address Tracker</h1>
+        <form class="flex justify-center mb-10">
+            <input id="search" name="search" class="focus:outline-white rounded-l-xl px-5 py-3 text-gray-400 w-4/5 sm:w-1/3" type="text" placeholder="Search for any IP address or domain">
+            <button id="searchBtn" class="focus:outline-white rounded-r-xl bg-gray-800 text-white px-4 py-3"><img src="images/icon-arrow.svg" alt=""></button>
+        </form>
+
+        <ul class="relative lg:absolute z-10 shadow-md -bottom-1/3 flex flex-col lg:flex-row flex-wrap justify-between text-left px-4 pb-4 pt-6 bg-white text-gray-800 rounded-xl">
+            <li class="px-5">
+                <p class="text-gray-400 text-sm uppercase">IP address</p>
+                <h4 class="text-l font-semibold mb-2" id="ip">-</h4>
+            </li>
+            <li class="border-0 lg:border-l-2 px-5">
+                <p class="text-gray-400 text-sm uppercase">Location</p>
+                <h4 class="text-l font-semibold mb-2" id="city">-</h4>
+            </li>
+            <li class="border-0 lg:border-l-2 px-5">
+                <p class="text-gray-400 text-sm uppercase">Time zone</p>
+                <h4 class="text-l font-semibold mb-2" id="timezone">-</h4>
+            </li>
+            <li class="border-0 lg:border-l-2 px-5">
+                <p class="text-gray-400 text-sm uppercase">ISP</p>
+                <h4 class="text-l font-semibold mb-2" id="isp">-</h4>
+            </li>
+        </ul>
+    </header>
+
+    <main id="mapid" class="relative z-0"></main>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
