@@ -47,7 +47,7 @@ function initMap(lat,lng) {
 // loader
 function loader () {
     if (loading === true) {
-        mapID.innerHTML = '<div class="flex justify-center items-center min-h-screen"><img src="images/Magnify-1s-200px.gif" />';
+        mapID.innerHTML = '<div class="flex justify-center items-center min-h-screen text-xl to-gray-800">Loading ... </div>';
         ip.innerHTML = 'loading ...';
         timezone.innerHTML = 'loading ...';
         city.innerHTML = 'loading ...';
